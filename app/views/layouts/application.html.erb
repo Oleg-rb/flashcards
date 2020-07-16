@@ -14,17 +14,25 @@
   </head>
 
   <body>
-    <section id="container">
+    <div class="container">
+      <nav class="navbar navbar-dark btn btn-light active">
+        <div class="navbar-header">
+             <h4><a class="navbar-dark" href="/">Флэшкарточкер</a></h4>
+        </div>
 
-      <header class="clearfix">
-        <h1>Флэшкарточкер</h1>
-        <ul class="navigation-links">
-          <li><a href="#">Все карточки</a></li>
-          <li><a href="#">Добавить карточку</a></li>
-        </ul>
-      </header>
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <h5><a class="navbar-dark badge-pill" href="#">Все карточки</a></h5>
+            </li>
+            <li class="nav-item">
+              <h5><a class="navbar-dark badge-pill" href="#">Добавить карточку</a></h5>
+            </li>
+          </ul>
+        </div>
 
-    </section>
+      </nav>
+    </div>
 
     <%= yield %>
   </body>
