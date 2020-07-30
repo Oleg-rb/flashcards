@@ -2,7 +2,7 @@
 
 # Base controller of application
 class CardsController < ApplicationController
-	def index
-		@cards = Card.all
-	end
+    def index
+        @cards = Card.all
+    end
 end
