@@ -17,7 +17,7 @@
       	<th scope="row"><%= n += 1 %></th>
      		<td><%= card.original_text %></td>
      		<td><%= card.translated_text %></td>
-      	<td><%= card.review_date %></td>
+      	<td><%= card.updated_at.to_date.strftime("%d/%m/%Y") %></td>
     	</tr>
     <% end %>
   </tbody>

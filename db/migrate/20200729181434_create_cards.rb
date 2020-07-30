@@ -3,9 +3,8 @@ class CreateCards < ActiveRecord::Migration[6.0]
     create_table :cards do |t|
       t.text :original_text
       t.text :translated_text
-      t.date :review_date
 
-      t.timestamps, DMY
+      t.timestamps
     end
   end
 end
