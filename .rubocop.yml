@@ -12,3 +12,9 @@ Style/StringLiterals:
 
 Layout/Tab:
   Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  Enabled: false
