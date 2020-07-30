@@ -1,11 +1,2 @@
-scss:
-  enabled: false
-
-stylelint:
-  enabled: false
-
-eslint:
-  enabled: false
-
 rubocop:
-  enabled: false
+  config_file: .rubocop.yml
