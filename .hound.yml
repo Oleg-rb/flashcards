@@ -1,9 +1,6 @@
 scss:
   enabled: false
 
-jshint:
-  ignore_file: .jshintignore
-
 stylelint:
   enabled: false
 
