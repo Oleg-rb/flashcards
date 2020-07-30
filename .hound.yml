@@ -6,3 +6,6 @@ stylelint:
 
 eslint:
   enabled: false
+
+rubocop:
+  enabled: false
