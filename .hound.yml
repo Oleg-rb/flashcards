@@ -6,3 +6,6 @@ jshint:
 
 stylelint:
   enabled: false
+
+eslint:
+  enabled: true
