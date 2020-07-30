@@ -9,3 +9,6 @@ Metrics/LineLength:
 
 Style/StringLiterals:
   Enabled: false
+
+Layout/Tab:
+  Enabled: false
