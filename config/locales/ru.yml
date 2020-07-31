@@ -2,6 +2,11 @@ ru:
   home:
     index:
       text: 'Первый в мире удобный менеджер флеш-карточек. Именно так.'
+  cards:
+    index:
+      original_text: 'Оригинал'
+      translated_text: 'Перевод'
+      review_date: 'Дата'
   common:
     site_name: 'Флэшкарточкер'
     all_cards: 'Все карточки'
