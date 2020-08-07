@@ -1,23 +1,29 @@
 <br />
 <div class="nav justify-content-center"><h1><%= t('common.all_cards') %></h1></div>
 <br />
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col"><%= t('cards.index.original_text') %></th>
-      <th scope="col"><%= t('cards.index.translated_text') %></th>
-      <th scope="col"><%= t('cards.index.review_date') %></th>
-    </tr>
-  </thead>
-  <tbody>
-  	<% @cards.each_with_index do |card, index| %>
-    	<tr>
-      	<th scope="row"><%= index + 1 %></th>
-     		<td><%= card.original_text %></td>
-     		<td><%= card.translated_text %></td>
-      	<td><%= card.updated_at.to_date.strftime("%d/%m/%Y") %></td>
-    	</tr>
+
+<div class="container">
+  <div class="row">
+
+    <% @cards.each_with_index do |card, index| %>
+      <div class="col-sm-4">
+        <ul class="col-md-12 badge badge-pill badge-info card ">
+
+          <div class="blockquote text-center">
+            <h2><%= card.original_text %></h2>
+          </div>
+
+          <div class="blockquote text-center">
+            <%= card.translated_text %>
+          </div>
+
+          <div class="blockquote text-center">
+            <h6><%= card.updated_at.to_date.strftime("%d/%m/%Y") %></h6>
+          </div>
+
+        </ul>
+      </div>
     <% end %>
-  </tbody>
-</table>
+
+  </div>
+</div>
