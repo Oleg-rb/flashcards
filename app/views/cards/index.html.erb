@@ -1,16 +1,15 @@
-<br />
 <div class="nav justify-content-center"><h1><%= t('common.all_cards') %></h1></div>
 <br />
 
 <div class="container">
   <div class="row">
 
-    <% @cards.each_with_index do |card, index| %>
+    <% @cards.each do |card| %>
       <div class="col-sm-4">
-        <ul class="col-md-12 badge badge-pill badge-info card ">
+        <ul class="col-md-12 badge badge-pill badge-warning card ">
 
           <div class="blockquote text-center">
-            <h2><%= card.original_text %></h2>
+            <h2><%= link_to card.original_text, card_path(card) %></h2>
           </div>
 
           <div class="blockquote text-center">

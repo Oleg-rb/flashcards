@@ -1,0 +1,33 @@
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container col-sm-9 justify-content-center">
+  <div class="row">
+
+      <div class="col-sm-4 col-lg">
+        <ul class="col-md-12 badge badge-pill badge-warning card">
+
+          <div class="blockquote text-center">
+            <h2><%= @card.original_text %></h2>
+          </div>
+          <br />
+          <div class="blockquote text-center">
+            <%= @card.translated_text %>
+          </div>
+          <br />
+          <br />
+          <div class="blockquote text-center">
+            <h6><%= @card.updated_at.to_date.strftime("%d/%m/%Y") %></h6>
+
+            <%= link_to 'Изменить', edit_card_path(@card) %>
+            |
+            <%= link_to 'Удалить', card_path(@card), method: :delete, data: { confirm: 'Вы уверены?' } %>
+          </div>
+
+        </ul>
+      </div>
+
+  </div>
+</div>
