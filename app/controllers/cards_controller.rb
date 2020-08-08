@@ -26,6 +26,18 @@ class CardsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @card.update_attributes(card_params)
+      redirect_to @card, success: 'Статья успешно обновлена'
+    else
+      flash.now[:danger] = 'Статья не обнавлена'
+      render :edit
+    end
+  end
+
   private
 
   def set_post

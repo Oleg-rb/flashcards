@@ -5,6 +5,8 @@ ru:
   cards:
     new:
       title: 'Новая карточка'
+    edit:
+      title: 'Редактирование карточки'
     form:
       submit: '%{action} карточку'
       input: 'Введите Ваше слово'
