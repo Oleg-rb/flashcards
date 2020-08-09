@@ -53,3 +53,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg'
 
 gem 'simple_form', '>= 5.0.2'
+
+gem 'jquery-rails'
+
+gem 'vanilla-ujs'

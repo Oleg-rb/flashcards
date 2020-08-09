@@ -11,6 +11,8 @@ ru:
       submit: '%{action} карточку'
       input: 'Введите Ваше слово'
       translate: 'Введите перевод слова'
+    show:
+      delete: 'Удалить'
   common:
     site_name: 'Флэшкарточкер'
     all_cards: 'Все карточки'

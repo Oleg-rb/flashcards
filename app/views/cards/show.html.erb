@@ -1,8 +1,6 @@
 <br />
 <br />
 <br />
-<br />
-<br />
 <div class="container col-sm-9 justify-content-center">
   <div class="row">
 
@@ -20,10 +18,10 @@
           <br />
           <div class="blockquote text-center">
             <h6><%= @card.updated_at.to_date.strftime("%d/%m/%Y") %></h6>
-
-            <%= link_to 'Изменить', edit_card_path(@card) %>
-            |
-            <%= link_to 'Удалить', card_path(@card), method: :delete, data: { confirm: 'Вы уверены?' } %>
+            <br />
+            <%= button_to t('common.edit'), edit_card_path(@card),  method: :get, class: "btn btn-success" %>
+            <br />
+            <%= button_to t('.delete'), card_path(@card), method: :delete, class: "btn btn-danger", data: { confirm: 'Вы уверены?' } %>
           </div>
 
         </ul>

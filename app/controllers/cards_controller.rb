@@ -31,11 +31,16 @@ class CardsController < ApplicationController
 
   def update
     if @card.update_attributes(card_params)
-      redirect_to @card, success: 'Статья успешно обновлена'
+      redirect_to @card, success: 'Карточка успешно обновлена'
     else
-      flash.now[:danger] = 'Статья не обнавлена'
+      flash.now[:danger] = 'Карточка не обнавлена'
       render :edit
     end
+  end
+
+  def destroy
+    @card.destroy
+    redirect_to cards_path, success: 'Карточка успешно удалена'
   end
 
   private
