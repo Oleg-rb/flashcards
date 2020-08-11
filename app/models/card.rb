@@ -7,7 +7,6 @@ class Card < ApplicationRecord
 
   before_create :recheck_date
 
-
   def recheck_date
     self.review_date = (Date.today + 3.days)
   end
@@ -20,9 +19,7 @@ class Card < ApplicationRecord
   end
 
   def translated
-    if original_text == translated_text
-      errors[:base] << 'Одинаковые значения!'
-    end
+      errors[:base] << 'Одинаковые значения!' if original_text.eql? translated_text
   end
 
   def russ

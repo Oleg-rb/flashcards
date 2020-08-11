@@ -2,8 +2,7 @@
 
 # Base controller of application
 class CardsController < ApplicationController
-
-  before_action :set_post, only: [ :show, :edit, :update, :destroy]
+  before_action :set_post, only: %i[:show, :edit, :update, :destroy]
 
   def index
     @cards = Card.all
@@ -25,11 +24,9 @@ class CardsController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @card.update_attributes(card_params)
