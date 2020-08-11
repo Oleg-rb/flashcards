@@ -13,18 +13,14 @@ class Card < ApplicationRecord
 
   validate :original, :translated, :russ
   def original
-    if (original_text =~ /^[A-Za-z]/) && (translated_text =~ /^[A-Za-z]/)
-      errors[:base] << 'Не переведено!'
-    end
+    errors[:base] << 'Не переведено!' if (original_text =~ /^[A-Za-z]/) && (translated_text =~ /^[A-Za-z]/)
   end
 
   def translated
-      errors[:base] << 'Одинаковые значения!' if original_text.eql? translated_text
+    errors[:base] << 'Одинаковые значения!' if original_text.eql? translated_text
   end
 
   def russ
-    if (original_text =~ /^[А-Яа-я]/) && (translated_text =~ /^[А-Яа-я]/)
-      errors[:base] << 'Не переведено!'
-    end
+    errors[:base] << 'Не переведено!' if (original_text =~ /^[А-Яа-я]/) && (translated_text =~ /^[А-Яа-я]/)
   end
 end

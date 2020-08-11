@@ -2,7 +2,7 @@
 
 # Base controller of application
 class CardsController < ApplicationController
-  before_action :set_post, only: %i[:show, :edit, :update, :destroy]
+  before_action :set_post, only: %i[show edit update destroy]
 
   def index
     @cards = Card.all
