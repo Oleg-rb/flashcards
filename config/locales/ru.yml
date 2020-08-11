@@ -19,8 +19,8 @@ ru:
     add_card: 'Добавить карточку'
     create: 'Создать'
     edit: 'Изменить'
-    original_text: 'Оригинал'
-    translated_text: 'Перевод'
+    original_text: 'Оригинальное слово'
+    translated_text: 'Перевод слова'
     review_date: 'Дата'
     back: 'Назад'
     errors:

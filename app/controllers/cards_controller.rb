@@ -15,6 +15,8 @@ class CardsController < ApplicationController
 
   def create
     @card = Card.new card_params
+    @card.review_date
+
     if @card.save
       redirect_to @card, success: 'Карточка успешно созданна'
     else
@@ -50,6 +52,6 @@ class CardsController < ApplicationController
   end
 
   def card_params
-    params.require(:card).permit(:original_text, :translated_text)
+    params.require(:card).permit(:original_text, :translated_text, :review_date)
   end
 end

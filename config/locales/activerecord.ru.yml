@@ -1,0 +1,16 @@
+ru:
+  activerecord:
+    models:
+      card: 'Карточка'
+    attributes:
+      card:
+        original_text: ''
+        translated_text: ''
+    errors:
+      messages:
+        blank: 'не может быть пустым'
+      models:
+        card:
+          attributes:
+            original_text:
+              taken: 'Такое оригинальное слово уже существует'

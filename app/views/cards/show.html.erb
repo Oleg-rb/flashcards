@@ -17,7 +17,7 @@
           <br />
           <br />
           <div class="blockquote text-center">
-            <h6><%= @card.updated_at.to_date.strftime("%d/%m/%Y") %></h6>
+            <h6><%= @card.review_date.to_date.strftime("%d/%m/%Y") %></h6>
             <br />
             <%= button_to t('common.edit'), edit_card_path(@card),  method: :get, class: "btn btn-success" %>
             <br />
